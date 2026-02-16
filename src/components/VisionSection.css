@@ -1,0 +1,34 @@
+.vision-section {
+  background: #f9fafb;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.vision-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.vision-card h3 {
+  color: #2563eb;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1.5rem;
+}
+
+.vision-card p {
+  color: #666;
+  line-height: 1.8;
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+}
+
+@media (max-width: 768px) {
+  .vision-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
